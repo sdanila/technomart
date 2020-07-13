@@ -1,0 +1,32 @@
+.popular {
+    &__items {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 21px;
+    }
+    &__link-item {
+        color: #000;
+        span {
+            color: #a9a9a9;
+        }
+        &:hover {
+            color: #000;
+            text-decoration: none;
+
+        }
+    }
+    &__item {
+        width: 220px;
+        height: 318px;
+        border: solid 1px #eaeaea;
+        margin-right: 20px;
+        text-align: center;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        span {
+            text-decoration: line-through;
+        }
+    }
+}

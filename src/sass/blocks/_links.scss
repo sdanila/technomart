@@ -1,0 +1,19 @@
+.link {
+    display: block;
+    width: 253px;
+    height: 38px;
+    background-color: $main-color;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 9px;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+    &_w-220 {
+        width: 220px;
+    }
+}
