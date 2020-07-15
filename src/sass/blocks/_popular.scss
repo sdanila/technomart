@@ -19,14 +19,22 @@
     &__item {
         width: 220px;
         height: 318px;
+        font-family: PTSans;
         border: solid 1px #eaeaea;
         margin-right: 20px;
         text-align: center;
         &:last-of-type {
             margin-right: 0;
         }
+        h3 {
+            font-weight: 700;
+        }
         span {
+            font-weight: 700;
             text-decoration: line-through;
         }
+    }
+    &__price {
+        font-weight: 700;
     }
 }

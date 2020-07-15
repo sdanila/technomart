@@ -6,10 +6,12 @@
         width: 220px;
         height: 68px;
         top: 0;
-        font-size: 23px;
+        font-family: Cuprum;
+        font-weight: 400;
+        font-size: 25px;
         color: #fff;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 14px;
         text-transform: uppercase;
         box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
         background-color: $main-color;
@@ -27,9 +29,12 @@
         justify-content: space-between;
         margin-left: 373px;
         list-style-type: none;
-        margin-bottom: 45px;
+        margin-bottom: 34px;
         padding: 0;
-        font-size: 15px;
+        font-family: Cuprum;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
         a {
             color: #fff;
             &:hover {
@@ -39,8 +44,12 @@
     }
     &__adress {
         position: absolute;
-        bottom: 53px;
-        font-size: 15px;
+        // bottom: 53px;
+        top: 100px;
+        font-family: Cuprum;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
         color: #fff;
         margin: 0;
         a {
@@ -56,7 +65,10 @@
         list-style-type: none;
         margin-left: 412px;
         padding: 0;
-        font-size: 15px;
+        font-family: Cuprum;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
         a {
             color: #ffd180;
             &:hover {
