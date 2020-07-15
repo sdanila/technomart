@@ -6,6 +6,8 @@
         background-color: #293449;
         height: 42px;
         margin-bottom: 46px;
+        font-family: Cuprum;
+        font-weight: 400;
     }
     &__links-items {
         height: 100%;
@@ -38,12 +40,14 @@
         display: flex;
         justify-content: center;
         // align-items: center;
-        padding-top: 13px;
+        padding-top: 5px;
         width: 220px;
         height: 47px;
         text-align: center;
         text-transform: uppercase;
-        font-size: 19px;
+        font-family: Cuprum;
+        font-weight: 400;
+        font-size: 24px;
         color: #fff;
         background-color: $main-color;
         box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -52,6 +56,7 @@
         input {
             background-color: #293449;
             width: 100px;
+            height: 100%;
             border: none;
             color: #fff;
             &::placeholder {
@@ -102,11 +107,16 @@
         width: 196px;
         text-align: left;
         color: $main-color;
+        font-family: Cuprum;
+        font-weight: 400;
+        font-style: italic;
         margin-right: 71px;
     }
     &__adress {
         width: 270px;
         margin-right: 69px;
+        font-family: Cuprum;
+        font-weight: 400;
         img {
             width: 18px;
             height: 19px;
@@ -136,6 +146,8 @@
     }
     &__login {
         margin-right: 10px;
+        font-family: Cuprum;
+        font-weight: 400;
         button {
             display: flex;
             justify-content: space-between;
@@ -153,6 +165,8 @@
         }
     }
     &__checkin {
+        font-family: Cuprum;
+        font-weight: 400;
         button {
             width: 150px;
             height: 45px;
@@ -171,6 +185,8 @@
         list-style-type: none;
         background-color: #32425c;
         padding: 0;
+        font-family: Cuprum;
+        font-weight: 400;
         li {
             height: 100%;
             &:hover {
@@ -189,10 +205,10 @@
             }
         }
         &__main {
-            width: 140px;
+            width: 135px;
         }
         &__company {
-            width: 125px;
+            width: 130px;
         }
         &__catalog {
             width: 125px;
