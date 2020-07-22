@@ -18,6 +18,10 @@
         &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
             margin-bottom: 20px;
         }
+        &:hover {
+            border: none;
+            box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+        }
     }
     &__link-item {
         display: flex;

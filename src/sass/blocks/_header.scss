@@ -12,18 +12,16 @@
     &__links-items {
         height: 100%;
         display: flex;
-        justify-content: space-between;
         list-style-type: none;
         margin: 0;
         padding: 0;
-        margin-left: 237px;
         li {
             display: flex;
             align-items: center;
-            width: 140px;
-            height: 100%;
             color: #fff;
-            p {
+            a {
+                text-decoration: none;
+                color: #fff;
                 margin: 0;
                 height: 17px;
                 font-size: 15px;
@@ -31,6 +29,24 @@
             }
             img {
                 opacity: .3;
+            }
+        }
+        &:hover {
+            background-color: #212a3a;
+            input {
+                background-color: #212a3a;
+            }
+            img {
+                transition: all 2.5s;
+                opacity: 1;
+            }
+            button {
+                transition: all 1s;
+                background-color: #5fbb2d;
+            }
+            .header__logo {
+                transition: all 1s;
+                background-color: #ca2c37;
             }
         }
         
@@ -47,15 +63,19 @@
         text-transform: uppercase;
         font-family: Cuprum;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 16px;
         color: #fff;
         background-color: $main-color;
         box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+        
     }
     &__search {
+        padding-left: 17px;
+        width: 270px;
+        margin-left: 220px;
         input {
             background-color: #293449;
-            width: 100px;
+            width: 220px;
             height: 100%;
             border: none;
             color: #fff;
@@ -69,11 +89,13 @@
         }
     }
     &__bookmark {
+        width: 160px;
         img {
             margin-right: 13px;
         }
     }
     &__cart {
+        width: 150px;
         img {
             margin-right: 17px;
         }
@@ -140,7 +162,7 @@
         p {
             text-align: center;
             color: #32425c;
-            font-size: 11px;
+            font-size: 14px;
             padding: 0 10px;
         }
     }
@@ -161,7 +183,9 @@
                 width: 20px;
                 height: 17px;
             }
-            
+            &:hover {
+                color: #ee3643;
+            }
         }
     }
     &__checkin {
@@ -172,6 +196,9 @@
             height: 45px;
             background-color: #fff;
             border: none;
+            &:hover {
+                color: #ee3643;
+            }
         }
     }
     
@@ -184,12 +211,14 @@
         height: 60px;
         list-style-type: none;
         background-color: #32425c;
+        box-shadow: inset 0px -5px 0 0 #293449;
         padding: 0;
         font-family: Cuprum;
         font-weight: 400;
         li {
             height: 100%;
             &:hover {
+                transition: all .5s;
                 background-color: #293449;
             }
             a {

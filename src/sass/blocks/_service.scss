@@ -30,11 +30,18 @@
         justify-content: start;
         align-items: center;
         padding-left: 22px;
+        &:hover {
+            background-color: #293449;
+        }
         &_active {
             box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
             background-color: #ffffff;
             color: #32425c;
+            &:hover {
+                background-color: #ffffff;
+            }
         }
+        
     }
     &__content {
         position: relative;

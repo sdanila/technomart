@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
@@ -14,19 +15,21 @@
         
         <section class="header__links">
             <div class="container">
-                <h1 class="header__logo">Техномарт</h1>
                 <ul class="header__links-items">
+                    <li class="header__logo">
+                        <h1>Техномарт</h1>
+                    </li>
                     <li class="header__search">
                         <img src="icons/icon-search.svg" alt="search">
                         <input type="text" placeholder="Поиск">
                     </li>
                     <li class="header__bookmark">
                         <img src="icons/icon-bookmark.svg" alt="bookmark">
-                        <p>Закладки: 0</p>
+                        <a href="#">Закладки: 0</a>
                     </li>
                     <li class="header__cart">
                         <img src="icons/icon-cart.svg" alt="cart">
-                        <p>Корзина: 0</p>
+                        <a href="#">Корзина: 0</a>
                     </li>
                     <li class="header__offer">
                         <button>Оформить заказ</button>
@@ -114,7 +117,33 @@
                         <img src="icons/icon-3.svg" alt="Техника">
                     </li>
                     <li class="information__slider">
-                        <div class="slider">
+                        
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/slider-1.jpg" alt="slider-1">
+                                    <p class="swiper__descr">
+                                        Перфораторы <br>
+                                        <span>Настоящие мужские игрушки</span>
+                                    </p>
+                                    <button href="#" class="link swiper__link">Открыть каталог</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/slider-2.jpg" alt="slider-2">
+                                    <p class="swiper__descr">
+                                        Дрели <br>
+                                        <span>Соседям на радость!</span>
+                                    </p>
+                                    <button href="#" class="link swiper__link">Открыть каталог</button>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        
+                        
+                        <!-- <div class="slider">
                             <div class="slider__item">
                                 <img src="img/slider-1.jpg" alt="Перфораторы">
                                 <p class="slider__descr">
@@ -131,7 +160,7 @@
                                 </p>
                                 <a href="#" class="slider__link">Открыть каталог</a>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="information__sale-delivery">
                         <div class="information__sale">
@@ -371,5 +400,9 @@
             </div>
         </section>
     </footer>
+
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
