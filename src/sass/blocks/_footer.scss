@@ -38,7 +38,7 @@
         a {
             color: #fff;
             &:hover {
-                text-decoration: none;
+                text-decoration: underline;
             }
         }
     }
@@ -72,7 +72,7 @@
         a {
             color: #ffd180;
             &:hover {
-                text-decoration: none;
+                text-decoration: underline;
             }
 
         }
@@ -105,6 +105,9 @@
         margin-right: 3px;
         &:last-of-type {
             margin: 0;
+        }
+        &:hover {
+          background-color: $main-color;  
         }
     }
     &__copyright {

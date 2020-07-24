@@ -23,19 +23,13 @@ $(document).ready(function(){
       .eq($(this).index()).addClass('service__content_active');
   })
 
-  // $('img.popular__image').hover(
-  //   function() {
-  //     alert('image');
-  //   },
-  //   function() {
-  //     alert('leave image');
-  //   });
 
   $('.popular__item').hover(
     function() {
-      $('img.popular__image')
-        .addClass('popular__image_on-hover').closest('div.container')
-        .find('.popular__buttons').addClass('popular__buttons_active');
+      $(this)
+        .find('img.popular__image').addClass('popular__image_on-hover')
+        .closest('div.container').find('.popular__buttons')
+        .eq($(this).index()).addClass('popular__buttons_active');
     },
     function() {
       $('img.popular__image')

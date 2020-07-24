@@ -32,25 +32,50 @@
         height: 170px;
         width: 218px;
         padding: 44px 42px 31px 41px;
+        cursor: default;
         &_active {
             display: block;
         }
     }
     &__button-buy {
+        display: flex;
+        align-items: center;
         width: 135px;
         height: 38px;
+        font-family: Cuprum;
+        font-weight: 400;
+        font-size: 13px;
+        padding: 0 12px;
         margin-bottom: 7px;
         border: none;
         border-radius: 3px;
         box-shadow: inset 0px -3px 0 0 #367315;
         background-color: #63a63e;
+        color: #fff;
+        text-transform: uppercase;
+        img {
+            opacity: .3;
+            margin-right: 22px;
+        }
+        &:hover {
+            transition: all .3s;
+            background-color: #5fbb2d;
+            img {
+                opacity: 1;
+            }
+        }
     }
     &__button-bookmark {
+        font-family: Cuprum;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
         width: 135px;
         height: 38px;
         border: solid 3px #63a63e;
         border-radius: 3px;
         background-color: #fff;
+        color: #32425c;
 
     }
     &__item {
@@ -71,6 +96,8 @@
             line-height: 1.1;
         }
         &:hover {
+            transition: all .5s;
+            border: none;
             box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
         }
     }

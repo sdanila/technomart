@@ -83,4 +83,17 @@
         bottom: 0;
         right: 0;   
     }
+    &__btn {
+        width: 195px;
+        height: 38px;
+        font-family: Cuprum;
+        font-weight: 400;
+        background-color: $main-color;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
 }

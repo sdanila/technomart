@@ -1,0 +1,70 @@
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 620px;
+    height: 430px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+    border-top: 7px solid $main-color;
+    &__btn {
+        display: block;
+        width: 460px;
+        height: 38px;
+        background-color: #ee3643;
+        color: #fff;
+        font-family: Cuprum;
+        font-weight: 400;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin: 37px auto;
+
+    }
+    &__close {
+        position: absolute;
+        font-size: 41px;
+        line-height: 21px;
+        text-transform: uppercase;
+        top: 5px;
+        right: 9px;
+        color: $main-color;
+        cursor: pointer;
+    }
+    
+    .feed-form {
+        padding: 48px 80px 37px;
+        height: 318px;
+        background-color: #fff;
+        label {
+            font-family: Cuprum;
+            font-size: 17px;
+            color: #000;
+        }
+        input {
+            width: 220px;
+            height: 38px;
+            border: solid 2px #dee3e4;
+            background-color: #ffffff;
+            border-radius: 3px;
+            margin-top: 13px;
+            padding-left: 16px;
+        }
+        textarea {
+            padding-top: 5px;
+            margin-top: 13px;
+            padding-left: 16px;
+            width: 460px;
+            height: 114px;
+            border: solid 2px #dee3e4;
+            background-color: #ffffff;
+            resize: none;
+            border-radius: 3px;
+        }
+    }
+    
+}
