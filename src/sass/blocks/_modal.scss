@@ -1,9 +1,16 @@
-
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+}
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     width: 620px;
     height: 430px;
     background-color: #f4f4f4;
@@ -48,14 +55,26 @@
         input {
             width: 220px;
             height: 38px;
-            border: solid 2px #dee3e4;
+            border: solid 2px #d7dcde;
             background-color: #ffffff;
             border-radius: 3px;
             margin-top: 13px;
             padding-left: 16px;
+            font-family: PTSans;
+            font-size: 13px;
+            font-weight: 400;
+            &::placeholder {
+                color: #999999;
+            }
+            &:hover {
+                border: solid 2px #b5b5b5;
+            }
+            &:focus {
+                border: solid 2px #ee3643;
+            }
         }
         textarea {
-            padding-top: 5px;
+            padding-top: 8px;
             margin-top: 13px;
             padding-left: 16px;
             width: 460px;
@@ -64,6 +83,18 @@
             background-color: #ffffff;
             resize: none;
             border-radius: 3px;
+            font-family: PTSans;
+            font-size: 13px;
+            font-weight: 400;
+            &::placeholder {
+                color: #999999;
+            }
+            &:hover {
+                border: solid 2px #b5b5b5;
+            }
+            &:focus {
+                border: solid 2px #ee3643;
+            }
         }
     }
     

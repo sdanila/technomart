@@ -1,0 +1,295 @@
+@media (max-width: 991px) {
+    .header {
+        height: 305px;
+        padding-top: 74px;
+        &__logo {
+            width: 160px;
+        }
+        &__search {
+            margin-left: 160px;
+            input {
+                width: 150px;
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
+        &__info-items {
+            padding-left: 27px;
+        }
+        &__descr {
+            margin-right: 55px;
+            width: 190px;
+            font-size: 15px;
+        }
+        &__adress {
+            margin-right: 53px;
+            width: 190px;
+            font-size: 17px;
+            a {
+                margin-bottom: 5px;
+                font-size: 17px;
+            }
+            img {
+                width: 15px;
+                margin-right: 19px;
+            }
+            p {
+                font-size: 11px;
+                padding: 0 10px;
+            }
+        }
+        &__login {
+            button {
+                width: 90px;
+                padding: 0 12px;
+                img {
+                    width: 17px;
+                }
+            }
+        }
+        &__checkin {
+            button {
+                width: 105px;
+            }
+        }
+        
+    }
+
+    .information {
+        height: 425px;
+        padding-top: 55px;
+        &__delivery, &__equipment, &__materials, &__sale, &__tool {
+            width: 226px;
+            height: 91px;
+        }
+        &__name {
+            p {
+                margin-left: 15px;
+                font-size: 17px;
+            }
+            a {
+                font-size: 14px;
+                width: 114px;
+                height: 33px;
+                margin-left: 15px;
+            }
+        }
+        &__materials {
+            img {
+                margin-left: 31px;
+                width: 39px;
+            }
+        }
+        &__tool {
+            img {
+                margin-left: 21px;
+                width: 62px;
+            }
+        }
+        &__equipment {
+            img {
+                width: 65px;
+                margin-left: 17px;
+            }
+        }
+        &__sale {
+            img {
+                margin-left: 16px;
+                width: 50px;
+            }
+        }
+        &__delivery {
+            img {
+                width: 65px;
+                margin-left: 13px;
+            }
+        }
+        &__slider {
+            // display: none;
+            width: 472px;
+            height: 202px;
+            img {
+                width: 472px;
+
+            }
+        }
+        .swiper-container {
+            width: 472px;
+            height: 202px;
+        }
+        .swiper-pagination-bullets {
+            bottom: 20px;
+        }
+        .swiper {
+            &__descr {
+                top: 11px;
+                font-size: 20px;
+                span {
+                    font-size: 13px;
+                }
+            }
+            &__link {
+                width: 140px;
+                height: 30px;
+                font-size: 12px;
+                bottom: 16px;
+            }
+        }
+    }
+
+    .title {
+        &_block {
+            height: 70px;
+            h2 {
+                font-size: 24px;
+            }
+            .link {
+                height: 35px;
+            }
+        }
+    }
+
+    .popular {
+        &__item {
+            height: 300px;
+            img {
+                width: 163px;
+                margin: 0 auto;
+            }
+            h3 {
+                font-size: 16px;
+                position: absolute;
+                top: 160px;
+            }
+        }
+        &__buttons {
+            padding: 20px 32px;
+            padding-top: 30px;
+            width: 163px;
+            height: 155px;
+        }
+        &__button-buy {
+            width: 100px;
+            margin-bottom: 28px;
+            img {
+                width: 15px;
+                margin: 0;
+                margin-right: 14px;
+            }
+        }
+        &__button-bookmark {
+            width: 100px;
+        }
+        &__price {
+            width: 130px;
+        }
+        &__old-price {
+            font-size: 16px;
+        }
+        &__actual-price {
+            width: 110px;
+        }
+    }
+
+    .brands {
+        padding-bottom: 65px;
+        &__item {
+            margin: 0;
+            width: 165px;
+            height: 125px;
+            margin-right: 20px;
+            img {
+                max-width: 150px;
+            }
+        }
+        &__item:nth-child(4), 
+        &__item:nth-child(8) {
+            margin-right: 0;
+        }
+    }
+
+    .service {
+        padding-top: 50px;
+        &__tab {
+            height: 50px;
+        }
+        &__image {
+            height: 150px;
+        }
+    }
+
+    .company-contacts {
+        padding-top: 50px;
+        .contacts {
+            &__text {
+                margin-bottom: 57px;
+            }
+        }
+    }
+
+    .footer {
+        &__logo {
+            width: 160px;
+            height: 47px;
+            padding-top: 5px;
+            font-size: 22px;
+        }
+        &__navigation {
+            height: 183px;
+        }
+        &__navigation-items {
+            margin-left: 324px;
+            font-size: 15px;
+        }
+        &__adress {
+            font-size: 14px;
+        }
+        &__catalog {
+            font-size: 15px;
+            margin-left: 353px;
+        }
+        &__info {
+            padding-top: 25px;
+            height: 97px;
+            font-size: 12px;
+        }
+        &__copyright {
+            margin-right: 79px;
+            width: 215px;
+
+        }
+        &__social {
+            margin-right: 65px;
+        }
+        &__feedback {
+            margin-right: 24px;
+        }
+    }
+
+    .modal {
+        width: 470px;
+        height: 330px;
+        .feed-form {
+            padding: 30px 62px;
+            height: 243px;
+            label {
+                font-size: 15px;
+            }
+            input {
+                width: 170px;
+                height: 34px;
+                margin-top: 9px;
+            }
+            textarea {
+                width: 343px;
+                height: 90px;
+            }
+        }
+        &__btn {
+            margin: 24px auto;
+            width: 343px;
+            height: 34px;
+        }
+    }
+}

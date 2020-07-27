@@ -2,11 +2,19 @@
     background-color: #f3f7f9;
     height: 320px;
     padding-bottom: 60px;
+    padding-top: 88px;
+    // padding-top: 88px;
     &__links {
+        position: fixed;
         background-color: #293449;
         height: 42px;
-        margin-bottom: 46px;
+        width: 100%;
+        // margin-bottom: 46px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         font-family: Cuprum;
+        z-index: 5;
         font-weight: 400;
     }
     &__links-items {
