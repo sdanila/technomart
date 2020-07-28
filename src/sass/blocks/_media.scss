@@ -57,8 +57,6 @@
     }
 
     .information {
-        height: 425px;
-        padding-top: 55px;
         &__delivery, &__equipment, &__materials, &__sale, &__tool {
             width: 226px;
             height: 91px;
@@ -106,7 +104,6 @@
             }
         }
         &__slider {
-            // display: none;
             width: 472px;
             height: 202px;
             img {
@@ -153,10 +150,6 @@
     .popular {
         &__item {
             height: 300px;
-            img {
-                width: 163px;
-                margin: 0 auto;
-            }
             h3 {
                 font-size: 16px;
                 position: absolute;
@@ -166,7 +159,6 @@
         &__buttons {
             padding: 20px 32px;
             padding-top: 30px;
-            width: 163px;
             height: 155px;
         }
         &__button-buy {
@@ -290,6 +282,373 @@
             margin: 24px auto;
             width: 343px;
             height: 34px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .visually-hidden {
+        display: none;
+    }
+    .header {
+        max-height: 290px;
+        padding-bottom: 40px;
+        &__links {
+            height: 35px;
+        }
+        &__links-items {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__logo {
+            width: 115px;
+            height: 37px;
+            font-size: 12px;
+        }
+        &__search {
+            margin-left: 116px;
+            padding-left: 10px;
+            width: 135px;
+            font-size: 14px;
+            img {
+                width: 10px;
+                margin-right: 5px;
+            }
+            input {
+                width: 100px;
+            }
+        }
+        &__bookmark {
+            img {
+                width: 10px;
+                margin-right: 7px;
+            }
+        }
+        &__cart {
+            img {
+                width: 10px;
+                margin-right: 7px;
+            }
+        }
+        &__offer {
+            button {
+                font-size: 14px;
+                line-height: 1;
+            }
+        }
+        &__info-items {
+            padding-left: 16px;
+        }
+        &__descr {
+            width: 124px;
+            font-size: 12px;
+            margin-right: 44px;
+        }
+        &__login {
+            button {
+                font-size: 14px;
+                width: 80px;
+                img {
+                    width: 13px;
+                }
+            }
+        }
+        &__checkin {
+            button {
+                font-size: 14px;
+                width: 97px;
+            }
+        }
+        .nav {
+            font-size: 13px;
+            height: 52px;
+        }
+    }
+    .information {
+        &__items {
+            li {
+                margin: 0;
+                &:nth-child(1), &:nth-child(2), &:nth-child(4) {
+                    margin-right: 10px;
+                }
+                &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__sale {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        &__delivery, &__equipment, &__materials, &__sale, &__tool {
+            width: 173px;
+            height: 71.3px;
+        }
+        &__sale-delivery {
+            height: 141px;
+        }
+        &__name {
+            margin: 0 auto;
+            p {
+                text-align: center;
+                margin: 0;
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
+            a {
+                font-size: 13px;
+                width: 100px;
+                height: 28px;
+                padding-top: 4px;
+                margin: 0;
+            }
+        }
+        &__slider {
+            width: 356px;
+            height: 153px;
+            img {
+                width: 356px;
+
+            }
+        }
+        .swiper-container {
+            width: 356px;
+            height: 153px;
+        }
+        .swiper-pagination-bullets {
+            bottom: 9px;
+        }
+        .swiper {
+            &__descr {
+                top: 7px;
+                font-size: 13px;
+                left: 15px;
+                span {
+                    font-size: 10px;
+                }
+            }
+            &__link {
+                width: 100px;
+                height: 25px;
+                font-size: 9px;
+                bottom: 9px;
+                left: 15px;
+            }
+        }
+    }
+
+    .title {
+        margin-bottom: 26px;
+        font-size: 24px;
+        &_block {
+            height: 45px;
+            h2 {
+                font-size: 18px;
+            }
+            .link {
+                height: 27px;
+                width: 150px;
+                font-size: 10px;
+                padding-top: 6px;
+            }
+        }
+    }
+
+    .popular {
+        &__item {
+            height: 230px;
+            h3 {
+                font-size: 12px;
+                position: absolute;
+                top: 110px;
+            }
+        }
+        &__buttons {
+            padding: 16px 19px;
+            height: 155px;
+        }
+        &__button-buy {
+            width: 80px;
+            margin-bottom: 10px;
+            padding-left: 23px;
+            font-size: 12px;
+            height: 33px;
+            img {
+                display: none;
+            }
+        }
+        &__button-bookmark {
+            font-size: 12px;
+            height: 33px;
+            width: 80px;
+        }
+        &__price {
+            width: 80%;
+        }
+        &__old-price {
+            font-size: 13px;
+        }
+        &__actual-price {
+            width: 80%;
+            font-size: 13px;
+            height: 28px;
+            padding-left: 16px;
+            &::after {
+                right: -16px;
+                border-left: 16px solid #ee3643;
+                border-top: 14px solid transparent;
+                border-bottom: 14px solid transparent;
+            }
+        }
+    }
+
+    .brands {
+        padding-bottom: 40px;
+        &__item {
+            width: 127.5px;
+            margin: 0;
+            margin-right: 10px;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                margin-bottom: 10px;
+            }
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+    .service {
+        padding-top: 30px;
+        &__items {
+            margin-top: 54px;
+        }
+        &__tabs {
+            font-size: 17px;
+        }
+        &__tab {
+            height: 45px;
+        }
+        &__text {
+            font-size: 25px;
+            p {
+                margin-top: 26px;
+                font-size: 11px;
+            }
+        }
+        &__btn {
+            width: 145px;
+            height: 35px;
+            font-size: 12px;
+        }
+    }
+
+    .company-contacts {
+        padding-bottom: 50px;
+        max-height: 440px;
+        &__items {
+            height: 100%;
+        }
+        .company {
+            width: 45%;
+            .title {
+                font-size: 22px;
+            }
+            &__text {
+                font-size: 12px;
+                max-height: 95px ;
+                line-height: 1.6;
+                span {
+                    display: none;
+                }
+            }
+            &__items {
+                font-size: 15px;
+                li {
+                    padding-left: 24px;
+                    &:before {
+                        top: 6px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        .contacts {
+            width: 45%;
+            .title {
+                font-size: 22px;
+            }
+            img {
+                width: 100%;
+                height: 150px;
+            }
+            &__text {
+                font-size: 12px;
+                line-height: 1.5;
+                margin-bottom: 19px;
+            }
+            &__button {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+        &__logo {
+            width: 115px;
+            height: 37px;
+            padding-top: 4px;
+            font-size: 18px;
+        }
+        &__navigation {
+            padding-top: 32px;
+            height: 135px;
+        }
+        &__adress {
+            font-size: 11px;
+            max-width: 100px;
+            top: 65px;
+        }
+        &__navigation-items {
+            margin-left: 194px;
+            font-size: 13px;
+        }
+        &__catalog {
+            font-size: 13px;
+            margin-left: 170px;
+        }
+        &__info {
+            max-height: 60px;
+            padding: 0;
+            padding-top: 15px;
+
+        }
+        &__info-items {
+            font-size: 8px;
+        }
+        &__social-item {
+            height: 30px;
+            width: 30px;
+            &:nth-child(1) {
+                img {
+                    width: 17px;
+                }
+            }
+            &:nth-child(2) {
+                img {
+                    width: 8px;
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    width: 13px;
+                }
+            }
         }
     }
 }

@@ -18,7 +18,7 @@
     }
     &__image {
         position: absolute;
-        // display: none;
+        width: 100%;
         top: 0;
         left: 0;
         &_on-hover {
@@ -31,7 +31,7 @@
         top: 0;
         left: 0;
         height: 170px;
-        width: 218px;
+        width: 100%;
         padding: 44px 42px 31px 41px;
         cursor: default;
         &_active {
