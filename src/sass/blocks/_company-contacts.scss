@@ -42,13 +42,16 @@
             font-style: normal;
             line-height: 1.85;
             color: #000;
+            p {
+                margin: 0;
+            }
         }
     }
     .contacts {
         width: 300px;
         &__text {
             margin-bottom: 33px;
-            width: 179px;
+            max-width: 179px;
             font-family: PTSans;
             font-size: 13px;
             font-weight: 400;
