@@ -884,6 +884,7 @@
     }
 
     .service {
+        padding: 30px 1% 0;
         &__descr {
             font-size: 12px;
         }
@@ -915,8 +916,8 @@
     }
 
     .company-contacts {
-        padding-top: 20px;
         max-height: 380px;
+        padding: 20px 1% 0;
         .title {
             margin-bottom: 20px;
             line-height: 1.2;
@@ -968,6 +969,7 @@
             width: 20%;
             font-size: 85%;
             padding-top: 7px;
+            left: 0;
         }
         &__adress {
             font-size: 8px;
@@ -979,7 +981,7 @@
             margin-bottom: 19px;
         }
         &__navigation {
-            padding-top: 22px;
+            padding: 22px 1% 0;
             height: 110px;
         }
         &__catalog {
