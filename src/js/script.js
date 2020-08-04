@@ -21,17 +21,19 @@ const modalClose = document.querySelector('.modal__close'),
       buyButton = document.querySelectorAll('.popular__button-buy'),
       bookmarkButton = document.querySelectorAll('.popular__button-bookmark'),
       cartSpan = document.querySelector('.header__cart a span'),
-      bookmarkSpan = document.querySelector('.header__bookmark a span');
+      bookmarkSpan = document.querySelector('.header__bookmark a span'),
+      mapClose = document.querySelector('.contacts__close'),
+      openMap = document.querySelector('.contacts__open-map'),
+      miniMap = document.querySelector('.contacts__mini-map');
 let counterCart = 0,
     counterBokmark = 0,
     arrBuy,
     arrBmark;
 
-console.log(buyButton, bookmarkButton);
 
 
-function overlayDisplay(qwe) {
-  overlay.style.display = qwe;
+function display(el, value) {
+  el.style.display = value;
 }
 
 for (let i = 0; i < buyButton.length; i++) {
@@ -50,16 +52,23 @@ for (let i = 0; i < bookmarkButton.length; i++) {
   }) 
 }
 
-contactsButton.addEventListener('click', function(){overlayDisplay('block')});
+contactsButton.addEventListener('click', function(){display(overlay, 'block')});
 
-modalClose.addEventListener('click', function(){overlayDisplay('none')});
+modalClose.addEventListener('click', function(){display(overlay, 'none')});
 
 overlay.addEventListener('click', function(e){
-  console.log(e.target)
   if ((e.target !== modal) && (e.target.offsetParent !== modal)) {
-    overlayDisplay('none');
+    display(overlay, 'none');
   }
 });
+
+mapClose.addEventListener('click', function(){display(openMap, 'none')});
+
+miniMap.addEventListener('click', function(e){
+  e.preventDefault();
+  display(openMap, 'block');
+});
+
   
 
 $(document).ready(function(){
