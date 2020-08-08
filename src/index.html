@@ -425,21 +425,22 @@
             <form action="writeus" class="feed-form">
                 <div class="modal__close">&times;</div>
                 <label>Ваше имя: <br>
-                    <input type="text" placeholder="Имя и Фамилия">
+                    <input type="text" name="fio" data-validate-field="fio" placeholder="Имя и Фамилия">
                 </label>
                 <label>Ваш e-mail: <br>
-                    <input type="text" placeholder="email@example.com">
+                    <input type="email" name="email" data-validate-field="email" placeholder="email@example.com">
                 </label>
                 <label>Текст письма: <br>
-                    <textarea name="message" id="" placeholder="В свободной форме"></textarea>
+                    <textarea type="text" name="msg" data-validate-field="msg" id="text" placeholder="В свободной форме"></textarea>
                 </label>
+                <button type="submit" class="modal__btn">Отправить</button>
             </form>
-            <button class="modal__btn">Отправить</button>
         </div>
     </div>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

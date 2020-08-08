@@ -14,6 +14,19 @@ let mySwiper = new Swiper(slider, {
   speed: 400,
 })
 
+function validateForms(selector, rules, messages) {
+  new window.JustValidate(selector, {
+    rules: rules,
+    messages: messages,
+    colorWrong: '#ee3643',
+    submitHandler: function(form, values, ajax) {
+      console.log(form)
+    } 
+  });
+}
+
+validateForms('.feed-form', { email: { required: true, email: true }, fio: { required: true }, msg: { required: true, minLength: '10' } }, { email: 'Неправильно введен почтовый адрес', msg: 'Введите текст письма длинной не меньше 10 символов', fio: 'Введите своё имя и фамилию' })
+
 const modalClose = document.querySelector('.modal__close'),
       modal = document.querySelector('.modal'),
       overlay = document.querySelector('.overlay'),
@@ -34,7 +47,7 @@ let counterCart = 0,
 
 function display(el, value) {
   el.style.display = value;
-}
+} 
 
 for (let i = 0; i < buyButton.length; i++) {
   arrBuy = buyButton[i];

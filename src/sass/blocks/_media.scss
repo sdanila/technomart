@@ -264,10 +264,14 @@
 
     .modal {
         width: 470px;
-        height: 330px;
+        min-height: 377px;
+        background-color: #fff;
         .feed-form {
             padding: 30px 62px;
-            height: 243px;
+            min-height: 283px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             label {
                 font-size: 15px;
             }
@@ -278,11 +282,14 @@
             }
             textarea {
                 width: 343px;
-                height: 90px;
+                height: 70px;
+            }
+            .js-validate-error-label {
+                font-size: 13px;
+                max-width: 170px;
             }
         }
         &__btn {
-            margin: 24px auto;
             width: 343px;
             height: 34px;
         }
@@ -1027,11 +1034,9 @@
 
     .modal {
         width: 75%;
-        height: 330px;
         .feed-form {
             padding: 0;
             padding-top: 7%;
-            height: 243px;
             display: block;
             margin: 0 auto;
             label {
@@ -1052,6 +1057,9 @@
                 height: 50px;
                 padding-left: 5px;
                 margin-top: 4px;
+            }
+            .js-validate-error-label {
+                font-size: 11px;
             }
         }
         &__btn {
